@@ -1,0 +1,3 @@
+# PATH modifications
+export PATH="~/personal/tools/bin:$PATH"
+export PATH="~/personal/tools/scripts:$PATH"
