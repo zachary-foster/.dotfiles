@@ -26,15 +26,17 @@ sudo apt install -y tmux
 # Install git
 sudo apt install -y git-all
 git config --global init.defaultBranch
+git config --global user.name "Zachary S.L. Foster"
+git config --global user.email "zacharyfoster1989@gmail.com"
 
 # Install neovim
 sudo apt-get install -y neovim
 
-# Install wezterm
-#curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
-#echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
-#sudo apt update
-#sudo apt install -y wezterm
+# Install AppimageLauncher
+sudo apt install -y software-properties-common
+sudo add-apt-repository -y ppa:appimagelauncher-team/stable
+sudo apt update
+sudo apt install -y appimagelauncher
 
 # Install lazyvim
 sudo apt-get install -y ripgrep fd-find
